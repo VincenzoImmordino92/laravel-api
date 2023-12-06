@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
     return $request->user();
 }); */
 
-/* Route::get('/projects', [PageController::class,'index']);
+Route::get('/projects', [PageController::class,'index']);
 //restituisco non una vista-vieW ma un file json
- */
+
