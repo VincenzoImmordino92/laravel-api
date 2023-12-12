@@ -35,7 +35,8 @@
         <p>Tipo: <strong>{{ $project->type?->name }}</strong></p>
         @endif
         <div class="w-50">
-            <img class="img-fluid" src="{{asset('storage/'.$project->image) }}" alt="{{$project->title}}">
+            <img id="thumb" width="150" onerror="this.src='/img/Placeholder.png'" src="{{ asset('storage/'. $project?->image) }}">
+
             <p>{{ $project->image_original_name }}</p>
         </div>
 
