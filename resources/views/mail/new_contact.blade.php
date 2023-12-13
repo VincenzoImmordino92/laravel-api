@@ -1,7 +1,7 @@
 <p>
-    Hai ricevuto un nuovo messaggio
-    nome: {{lead->name}}
-    email: {{lead->email}}
+    Hai ricevuto un nuovo messaggio <br>
+    nome: {{$lead->name}}
+    email: {{$lead->email}}
     Messaggio: <br>
-        {{lead->message}}
+        {{$lead->message}}
 </p>
